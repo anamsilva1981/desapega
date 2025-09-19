@@ -1,0 +1,18 @@
+{
+    "doacoes": [
+        {
+        "id": 1,
+        "titulo": "Sofá 3 lugares",
+        "descricao": "Sofá em bom estado, cor cinza.",
+        "categoria": "Móveis",
+        "cidade": "São Paulo",
+        "bairro": "Vila Mariana",
+        "disponivel": true,
+        "fotos": [
+            "https://via.placeholder.com/300x200?text=Sofa",
+            "https://via.placeholder.com/300x200?text=Detalhe"
+            ]
+        }
+
+    ]
+}
