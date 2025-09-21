@@ -43,7 +43,7 @@ Ele contém:
 
 ### Visual do Menu
 
-![Menu do Desapega](docs/menu.png)
+![Menu do Desapega](/src/assets/imagens/docs/header.png)
 
 ---
 
