@@ -1,0 +1,29 @@
+<p-toolbar styleClass="shadow-1">
+  <ng-template pTemplate="start">
+    <div class="flex align-items-center gap-2">
+      <img src="assets/imagens/logotipo2.png" alt="logotipo" width="40" height="32" />
+      <span class="font-bold text-lg">Desapega</span>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="center">
+    <input
+      type="text"
+      pInputText
+      placeholder="Search"
+      style="width: 40vw; max-width: 500px;"
+    />
+  </ng-template>
+
+  <ng-template pTemplate="end">
+    <div class="flex align-items-center gap-3">
+      <i class="pi pi-bell cursor-pointer text-xl"></i>
+      <i class="pi pi-cog cursor-pointer text-xl"></i>
+      <i class="pi pi-envelope cursor-pointer text-xl"></i>
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        shape="circle"
+      />
+    </div>
+  </ng-template>
+</p-toolbar>

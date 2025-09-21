@@ -1,18 +1,46 @@
 {
-    "doacoes": [
-        {
-        "id": 1,
-        "titulo": "Sofá 3 lugares",
-        "descricao": "Sofá em bom estado, cor cinza.",
-        "categoria": "Móveis",
-        "cidade": "São Paulo",
-        "bairro": "Vila Mariana",
-        "disponivel": true,
-        "fotos": [
-            "https://via.placeholder.com/300x200?text=Sofa",
-            "https://via.placeholder.com/300x200?text=Detalhe"
-            ]
-        }
-
-    ]
+  "users": [
+    {
+      "id": 1,
+      "nome": "Ana Souza",
+      "telefone": "(11) 99999-1111",
+      "email": "ana@example.com",
+      "cpf": "000.000.000-00"
+    },
+    {
+      "id": 2,
+      "nome": "Carlos Pereira",
+      "telefone": "(11) 98888-2222",
+      "email": "carlos@example.com",
+      "cpf": "000.000.000-01"
+    }
+  ],
+  "doacoes": [
+    {
+      "id": 1,
+      "titulo": "Sofá 3 lugares",
+      "descricao": "Sofá em bom estado, apenas alguns arranhões no tecido.",
+      "categoria": "Móveis",
+      "quantidade": 1,
+      "cidade": "São Paulo",
+      "bairro": "Vila Mariana",
+      "userId": 1,
+      "fotos": [
+        "https://picsum.photos/300/200?random=1"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Geladeira Frost Free",
+      "descricao": "Geladeira funcionando, mas com pequeno amassado na lateral.",
+      "categoria": "Eletrodomésticos",
+      "quantidade": 1,
+      "cidade": "São Paulo",
+      "bairro": "Tatuapé",
+      "userId": 2,
+      "fotos": [
+        "https://picsum.photos/300/200?random=2"
+      ]
+    }
+  ]
 }
