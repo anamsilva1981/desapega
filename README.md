@@ -1,27 +1,50 @@
-# DesapegaApp
+## 📌 Menu de Navegação
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+O projeto possui um menu fixo no topo desenvolvido com [PrimeNG Toolbar](https://primeng.org/toolbar).  
 
-## Development server
+Ele contém:
+- **Logo** no canto esquerdo
+- **Campo de busca** centralizado
+- **Ícones de notificações e configurações**
+- **Avatar do usuário** no canto direito
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+### 🖼 Visual do Menu
+![Menu do Desapega](/src/assets/imagens/docs/header.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> A imagem acima mostra o layout inicial do menu implementado.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 💻 Código do Menu
 
-## Running unit tests
+```html
+<p-toolbar styleClass="shadow-1 border-bottom-2 border-primary">
+  <ng-template pTemplate="start">
+    <div class="flex align-items-center gap-2">
+      <img src="assets/imagens/logotipo2.png" alt="logotipo" width="40" height="32" />
+      <span class="font-bold text-lg">Desapega</span>
+    </div>
+  </ng-template>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  <ng-template pTemplate="center">
+    <input
+      type="text"
+      pInputText
+      placeholder="Search"
+      style="width: 40vw; max-width: 500px;"
+    />
+  </ng-template>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  <ng-template pTemplate="end">
+    <div class="flex align-items-center gap-3">
+      <i class="pi pi-bell cursor-pointer text-xl"></i>
+      <i class="pi pi-cog cursor-pointer text-xl"></i>
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        shape="circle"
+      />
+    </div>
+  </ng-template>
+</p-toolbar>
